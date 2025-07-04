@@ -1,5 +1,6 @@
-# A simple Python script to create an AWS S3 bucket
-# Bucket names must be globally unique across all AWS accounts.
+# Author: Todor Parushev
+# Date: 2025-07-04
+# Description: A simple Python script to create an AWS S3 bucket
 # Make sure you have configured your AWS credentials
 
 import boto3
@@ -13,7 +14,7 @@ try:
 except Exception as e:
     print(e)   
 
-# Create an S3 client with the specified region        
+# Create an S3 client with the specified region in line 18 and 26        
 
 def create_s3bucket(bucket_name, region=""):
     s3_bucket=boto3.client(
